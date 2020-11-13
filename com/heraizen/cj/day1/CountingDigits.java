@@ -11,11 +11,10 @@ public class CountingDigits {
 	    int num = scan.nextInt();
 	    scan.close();
 	    
-	    int count = 0 , total = 0,rem, reverse=0;
+	    int count = 0 , total = 0, reverse=0;
 	    while(num!=0) {
-	    	 rem = num % 10;
-	         total = total + rem;
-	         reverse = reverse * 10 +rem;
+	         total = total + num % 10;
+	         reverse = reverse * 10 + (num % 10);
 	    	 num = num/10 ;
 	    	 count = count + 1;
 	    }
